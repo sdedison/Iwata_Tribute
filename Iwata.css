@@ -1,0 +1,184 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #dcdcdc;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 32px;
+	color: blue;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+
+h3 {
+	color: blue;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+ul, li {
+	list-style-type: none;
+	list-style-position:inside;
+	margin: 0;
+	padding: 0;
+}
+
+li { 
+	background-color: white;
+	border-bottom: solid silver 1px;
+	padding: 10px 8px;
+}
+
+p {
+	margin: 0px;
+}
+
+footer {
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+#mario {
+	animation-name: mkart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: relative;
+	animation-timing-function: linear;
+	height: 100px;
+	z-index: 3;
+}
+
+#luigi {
+	animation-name: lkart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	position: relative;
+	animation-timing-function: linear;
+	height: 100px;
+}
+
+#toad {
+	animation-name: tkart;
+	animation-duration: 5.3s;
+	animation-iteration-count: infinite;
+	position: relative;
+	animation-timing-function: linear;
+	height: 100px;
+	z-index: 2;
+}
+
+@keyframes mkart {
+	0% {
+		top: 100px;
+		left: -100%;
+	}
+	100% {
+		top: 100px;
+		left: 100%;
+	}
+}
+
+@keyframes lkart {
+	0% {
+		left: -100%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+@keyframes tkart {
+	0% {
+		left: -100%;
+		top: 40px;
+	}
+	100% {
+		left: 100%;
+		top: 40px;
+	}
+}
+
+.container {
+	overflow: auto;
+}
+
+.quote {
+	margin: 10px 20%;
+}
+
+.more-info {
+	margin: 10px 20%;
+}
+
+
+#racetrack {
+	height: 200px;
+	width: 100%;
+	background-color: gray;
+}
+
+#lines {
+	height: 50%;
+	border-bottom: 8px dashed white;
+	position: relative;
+	bottom: 100px;
+}
+
+#img-div {
+	float: left;
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+#shroom-div {
+	float: left;
+	width: 20%;
+	margin-top: 80px;
+}
+
+#star-div {
+	float: left;
+	width: 20%;
+	margin-top: 80px;
+}
+
+#mushroom {
+	width: 100%;
+}
+
+#star {
+	width: 100%;
+}
+
+#img-caption {
+	background-color: white;
+	padding: 5px 10px;
+	margin-top: -10px;
+}
+
+#image {
+	width:100%;
+	text-align: center;
+}
+
+#tribute-info {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
