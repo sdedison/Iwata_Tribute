@@ -115,7 +115,9 @@ footer {
 }
 
 .container {
-	overflow: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
 }
 
 .quote {
@@ -142,20 +144,23 @@ footer {
 
 #img-div {
 	float: left;
-	width: 60%;
+	width: 50%;
 	margin-bottom: 30px;
+	flex: 3 0 100px;
 }
 
 #shroom-div {
 	float: left;
 	width: 20%;
 	margin-top: 80px;
+	flex: 1 0 50px;
 }
 
 #star-div {
 	float: left;
 	width: 20%;
 	margin-top: 80px;
+	flex: 1 0 50px;
 }
 
 #mushroom {
@@ -168,12 +173,15 @@ footer {
 
 #img-caption {
 	background-color: white;
-	padding: 5px 10px;
-	margin-top: -10px;
+	padding: 10px 10px;
+	margin-top: 0 px;
+	width: 100%;
 }
 
 #image {
-	width:100%;
+	max-width: 100%;
+	text-align: center;
+	display: block;
 	text-align: center;
 }
 
@@ -182,3 +190,8 @@ footer {
 	margin-right: 20%;
 }
 
+@media (min-width: 600px) {
+	#image {
+		width: 100%;
+	}
+}
